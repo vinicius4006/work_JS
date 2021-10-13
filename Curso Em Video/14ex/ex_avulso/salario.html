@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Salarial</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo Salarial</h1>
+    </header>
+    <section>
+        <div>
+            <p>Salário Inicial: <input type="number" name="" id="salario"></p>
+            <p>Ano de ajuste: 
+                <select name="" id="ano">
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+            </select></p>
+            
+            <input type="button" value="Reajuste" onclick="salarioAjuste()">
+            
+        </div>
+        <div id="res">   
+           <select name="salario" id="newSalario" size=3>
+               <option>Resultado final</option>
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

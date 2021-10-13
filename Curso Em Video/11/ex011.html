@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        body{
+            background: darkcyan;
+            color: whitesmoke;
+        }
+        div#res{
+            margin-top: 50px;
+            background: blanchedalmond;
+            text-align: center;
+            font: normal 20px Arial;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de nacionalidades</h1>
+        País: <input type="text" name="pori" id="origem">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function verificar(){
+            var ori = window.document.querySelector("input#origem").value
+            var res = window.document.querySelector("div#res")
+            res.innerHTML = `Você é do(a) ${ori}`
+             if (ori != "Brasil"){
+                 res.innerHTML += "<p>Então você é <strong>estrangeiro(a)</strong></p>"
+             } else{
+                 res.innerHTML += "<p>Então você é <strong>brasileiro(a)</strong></p>"
+             }
+        }
+    </script>
+</body>
+</html>
