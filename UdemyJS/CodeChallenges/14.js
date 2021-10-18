@@ -2,13 +2,13 @@
 const sFibonacci = num => {
     let sFibo = [0,1]
     let sFiboCal = []
-    for (let pos = 0; pos <= num; pos++){
-        if (sFibo[pos] !== undefined)
-            sFiboCal.push(sFibo[pos])
+    for (let termo = 0; termo <= num; termo++){
+        if (sFibo[termo] !== undefined)
+            sFiboCal.push(sFibo[termo])
             else
             sFiboCal.push(sFiboCal[sFiboCal.length-1]+sFiboCal[sFiboCal.length-2])
         }
         return sFiboCal          
 }
 
-console.log(sFibonacci(20))
+console.log(sFibonacci(5))
