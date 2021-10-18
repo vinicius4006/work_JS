@@ -1,4 +1,4 @@
-//Print the first 10 Fibonacci numbers without recursion
+//Print the first 10 Fibonacci numbers using recursion
 const sFibonacci = num => {
     let sFibo = [0,1]
     let sFiboCal = []
@@ -11,4 +11,4 @@ const sFibonacci = num => {
         return sFiboCal          
 }
 
-console.log(sFibonacci(5))
+console.log(sFibonacci(0))
