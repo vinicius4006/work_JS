@@ -32,3 +32,4 @@ const groupedbyRatings = books.reduce((groupedBooks, book) => {
     return groupedBooks
 },{})
 console.log(groupedbyRatings)
+
