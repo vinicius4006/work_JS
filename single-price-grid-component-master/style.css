@@ -1,0 +1,43 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    
+}
+#section{
+    text-align: center;
+    width: 700px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
+    margin: auto;
+}
+#part1 {
+    background: white;
+    
+}
+#p1-txt1{
+    color: hsl(179, 62%, 43%);
+}
+#p1-txt2{
+    color: hsl(71, 73%, 54%);
+}
+#p1-txt3{
+    color:hsl(218, 22%, 67%)
+}
+#part2{
+    background: hsl(179, 62%, 43%);
+    height: auto;
+}
+#btnSign{
+    background: hsl(71, 73%, 54%);
+    color: white;
+}
+
+#part3{
+    background: hsla(179, 62%, 43%, 0.664);
+}
+p{
+    color: hsl(204, 43%, 93%);
+}
