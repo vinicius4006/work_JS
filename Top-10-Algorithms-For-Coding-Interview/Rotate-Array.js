@@ -1,4 +1,3 @@
-// Rotate an array to the right 1 position 
 var ar = [1,2,3,4,5,6,7]
 const rotateRight = (num,x) =>{
     for(let pos=0;pos<x;pos++){
@@ -7,4 +6,3 @@ const rotateRight = (num,x) =>{
     return ar
 }
 console.log(rotateRight(ar,3))
-

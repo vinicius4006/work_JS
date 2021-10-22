@@ -45,4 +45,4 @@ stack.push(5)
 stack.push(8)
 stack.push(80)
 
-console.log(stack.toString())
+console.log(stack.items)

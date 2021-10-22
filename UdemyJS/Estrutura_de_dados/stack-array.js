@@ -27,4 +27,4 @@ stack.push(8)
 stack.push(7)
 stack.pop()
 
-console.log(stack.size())
+console.log(stack.items)
