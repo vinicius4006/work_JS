@@ -15,13 +15,14 @@ for (let value of values.split(","))
 function drawCard(deck){
     return deck.pop()
 }
-const myDeck = makeDeck()
-console.log(myDeck.length)
-const card1 = drawCard(myDeck)
+const makeDeck = makeDeck()
+console.log(makeDeck.length)
+const card1 = drawCard(makeDeck)
 console.log(card1)
 */
 //          2 
-const myDeck = {
+ const makeDeck = () =>  {
+    return {
     deck: [],
     drawCards: [],
     suits: ["hearts","diamonds","spades","clubs"],
@@ -64,12 +65,11 @@ const myDeck = {
     }
      
 }
-//const firstDeck = initializeDeck()
+}//const firstDeck = initializeDeck()
+const myDeck = makeDeck()
 myDeck.initializeDeck()
 myDeck.shuffle()
-const h1 =  myDeck.drawMultiple(5)
-const h2 =  myDeck.drawMultiple(5)
-const h3 =  myDeck.drawMultiple(5)
-console.log(h1)
+console.log(myDeck.deck)
+
 
 
