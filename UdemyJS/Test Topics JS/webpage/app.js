@@ -1,0 +1,1 @@
+//querySelector("section ul li.special") exemplo
