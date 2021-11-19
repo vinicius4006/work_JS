@@ -1,4 +1,4 @@
-class Deque{
+export class Deque{
     constructor(){
         this.items = {}
         this.count = 0
@@ -63,7 +63,7 @@ class Deque{
         }
     }
 }
-
+/*
 const deque = new Deque()
 deque.addBack(5)
 deque.addBack(6)
@@ -72,4 +72,4 @@ deque.addFront(15)
 deque.addFront(3)
 
 console.log(deque.items)
-console.log(deque.toString())
+console.log(deque.toString())*/
