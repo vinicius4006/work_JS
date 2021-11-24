@@ -1,6 +1,6 @@
-import { defaultEquals } from "../linked-list/equals.js"
-import { LinkedList } from "../linked-list/LinkedList.js"
-import { Node } from "../linked-list/node.js"
+import { defaultEquals } from "../Linked-List/equals.js"
+import { LinkedList } from "../Linked-List/LinkedList.js"
+import { Node } from "../Linked-List/node.js"
 class DoublyNode extends Node {
     constructor(element, next, prev){
         super(element, next)
