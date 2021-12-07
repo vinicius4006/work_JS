@@ -39,41 +39,20 @@ const fakeRequest = (url) => {
 	});
 };
 
-fakeRequest('/users')
-	.then((res) => {
-		console.log(res);
-		const id = res.data[0].id;
-		return fakeRequest(`/users/${id}`);
+fakeRequest("/users").then((res) => {
+	console.log(res);
+	const id = res.data[0].id;
+	return fakeRequest(`/users/${id}`)
+})
+.then((res) => {
+	console.log(res);
+	const postId = res.data.topPostId;
+	return fakeRequest(`/posts/${postId}`)
 	})
 	.then((res) => {
-		console.log(res);
-		const postId = res.data.topPostId;
-		return fakeRequest(`/posts/${postId}`);
+		console.log(res)
 	})
-	.then((res) => {
-		console.log(res);
-	})
-	.catch((err) => {
-		console.log('OH NO!', err);
-	});
 
-// ************************************************
-// ATTEMPT 2 (deliberate error to illustrate CATCH)
-// ************************************************
-// fakeRequest('/users')
-// 	.then((res) => {
-// 		console.log(res);
-// 		const id = res.data[0].id;
-// 		return fakeRequest(`/useALSKDJrs/${id}`); //INVALID URL, CATCH WILL RUN!
-// 	})
-// 	.then((res) => {
-// 		console.log(res);
-// 		const postId = res.data.topPostId;
-// 		return fakeRequest(`/posts/${postId}`);
-// 	})
-// 	.then((res) => {
-// 		console.log(res);
-// 	})
-// 	.catch((err) => {
-// 		console.log('OH NO!', err);
-// 	});
+.catch((err) => {
+	console.log("OH NO!", err);
+});
