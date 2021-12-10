@@ -31,10 +31,10 @@ window.addEventListener("keyup", function(e){
 		moveHorizontal(avatar, 50)
 	}
 	if (isTouching(avatar, coin)){ 
-		if (count == 3){
-		 window.alert("3 PONTOS")
-		return document.location.reload(true)
-		}
+		//if (count == 3){
+		// window.alert("3 PONTOS")
+		//return document.location.reload(true)
+		//}
 		 
 
 		count++

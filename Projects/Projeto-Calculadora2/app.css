@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lobster", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #faba32;
+  
+}
+
+#calculadora {
+    
+    
+    border-collapse: collapse;
+}
+
+#calculadora td{
+    text-align: right;
+    padding: 30px;
+    font-size: 18px;
+}
+
+td{
+    width: 60px;
+    height: 60px;
+    background: #f76e2a;
+    color: black;
+}
+#calculadora td:hover{
+    background: #f0c505;
+    color: #111
+}
+#calculadora #clear:hover{
+    background: #e7204e;
+}
+
+#calculadora #res:hover{
+    background: #b0c65a;
+}
+
+
+
+
